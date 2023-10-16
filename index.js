@@ -1,6 +1,16 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+  word = word.toLowerCase().replace(/\s/g, '');
+
+  // Compare the word with its reverse to check for a palindrome
+  return word === word.split('').reverse().join('');
 }
+
+// Example usage
+console.log(isPalindrome("racecar"));  // true
+console.log(isPalindrome("robot"));    // false
+console.log(isPalindrome("A man a plan a canal Panama")); 
+  // Write your algorithm here
+
 
 /* 
   Add your pseudocode here
